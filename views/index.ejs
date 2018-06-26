@@ -1,0 +1,33 @@
+<div class='jumbotron' id='camera'>
+    <div id='top'>
+        <h1 class='top'>SCENES</h1>
+        <p>Learn about scenes and shaaaaa</p>
+    </div>
+</div>
+<form action='/search' method='GET' class='container'>
+    <input id='searchBar' name='search' />
+    <button type='submit' id='searchButton' class='btn btn-sm'>Search</button>
+</form>
+
+<% for (let j=0; j< movies.results.length; j++) { %>
+    <div class='container media'>
+        <div class='media-left'>
+            <a href='/movies/<%= movies.results[j].id %>'>
+                <img class='media-object' src='https://image.tmdb.org/t/p/w500/<%=movies.results[j].poster_path%>' alt='...'>
+            </a>
+        </div>
+        <div class='media-body'>
+            <a href='/movies/<%= movies.results[j].id %>'>
+                <h4 class='media-heading'>
+                    <%= movies.results[j].title %>
+                </h4>
+            </a>
+            <p>
+                <%= movies.results[j].overview %>
+            </p>
+        </div>
+    </div>
+<% } %>
+
+<% include ./partials/header %>
+<% include ./partials/footer %>

@@ -1,0 +1,56 @@
+.jumbotron {
+  background-size: cover;
+  background-size: 100%; }
+
+#top {
+  text-align: right;
+  padding-right: 30px;
+  padding-top: 17%; }
+  #top p {
+    color: grey; }
+
+#camera {
+  background-image: url("../img/cam.jpg");
+  background-position: 0% 44%;
+  min-height: 500px; }
+
+#popcorn {
+  background-image: url("../img/popcorn.jpg");
+  background-position: 0% 60%;
+  min-height: 400px;
+  text-align: center; }
+
+.btn {
+  background-color: 39393A;
+  border: none; }
+
+.btn:hover {
+  background-color: 59656F; }
+
+#backButton {
+  width: 25%; }
+
+a:hover {
+  color: black; }
+
+a:link {
+  color: black; }
+
+#searchBar {
+  width: 92%; }
+
+#searchButton {
+  color: white; }
+
+img.media-object {
+  height: 20%; }
+
+h1 {
+  font: 100% 'Fredoka One', cursive; }
+
+.title {
+  text-align: center; }
+
+p.singleMovie {
+  padding: 0% 10%;
+  text-align: center; }

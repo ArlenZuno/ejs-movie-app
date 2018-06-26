@@ -1,0 +1,24 @@
+<div>
+    <div class='jumbotron' id='popcorn'>
+        <h1>ISSA SCENE</h1>
+    </div>
+    <div class='container'>
+    <h2 class='title'>
+        <%= movies.title %>
+    </h2>
+    <h3 class='title'>
+        <%= movies.vote_average %> / 10
+    </h3>
+    <p class='singleMovie'>
+        <%= movies.overview %>
+    </p>
+    <br>
+    <p>
+        <a id='backButton' class="btn btn-primary btn-lg center-block" href='/' role="button">BACK</a>
+    </p>
+    </div>
+</div>
+
+
+<% include ../partials/header %>
+<% include ../partials/footer %>
